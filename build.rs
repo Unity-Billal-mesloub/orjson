@@ -39,7 +39,6 @@ fn main() {
     println!("cargo:rerun-if-env-changed=LDFLAGS");
     println!("cargo:rerun-if-env-changed=ORJSON_BUILD_FREETHREADED");
     println!("cargo:rerun-if-env-changed=RUSTFLAGS");
-    println!("cargo:rustc-check-cfg=cfg(cold_path)");
     println!("cargo:rustc-check-cfg=cfg(CPython)");
     println!("cargo:rustc-check-cfg=cfg(GraalPy)");
     println!("cargo:rustc-check-cfg=cfg(optimize)");
@@ -56,21 +55,6 @@ fn main() {
     #[cfg(all(target_arch = "x86_64", not(target_os = "macos")))]
     if is_64_bit_python {
         println!("cargo:rustc-cfg=feature=\"avx512\"");
-    }
-
-    #[cfg(target_arch = "aarch64")]
-    if version_check::supports_feature("portable_simd").unwrap_or(false) {
-        println!("cargo:rustc-cfg=feature=\"generic_simd\"");
-    }
-
-    if version_check::is_min_version("1.95.0")
-        .unwrap_or(version_check::supports_feature("cold_path").unwrap_or(false))
-    {
-        println!("cargo:rustc-cfg=feature=\"cold_path\"");
-    }
-
-    if version_check::supports_feature("optimize_attribute").unwrap_or(false) {
-        println!("cargo:rustc-cfg=feature=\"optimize\"");
     }
 
     cc::Build::new()
