@@ -1,20 +1,20 @@
 # orjson
 
 orjson is a fast, correct JSON library for Python. It
-[benchmarks](https://github.com/ijl/orjson?tab=readme-ov-file#performance) as the fastest Python
+[benchmarks](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#performance) as the fastest Python
 library for JSON and is more correct than the standard json library or other
 third-party libraries. It serializes
-[dataclass](https://github.com/ijl/orjson?tab=readme-ov-file#dataclass),
-[datetime](https://github.com/ijl/orjson?tab=readme-ov-file#datetime),
-[numpy](https://github.com/ijl/orjson?tab=readme-ov-file#numpy), and
-[UUID](https://github.com/ijl/orjson?tab=readme-ov-file#uuid) instances natively.
+[dataclass](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#dataclass),
+[datetime](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#datetime),
+[numpy](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#numpy), and
+[UUID](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#uuid) instances natively.
 
-[orjson.dumps()](https://github.com/ijl/orjson?tab=readme-ov-file#serialize) is
+[orjson.dumps()](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#serialize) is
 something like 10x as fast as `json`, serializes
 common types and subtypes, has a `default` parameter for the caller to specify
 how to serialize arbitrary types, and has a number of flags controlling output.
 
-[orjson.loads()](https://github.com/ijl/orjson?tab=readme-ov-file#deserialize)
+[orjson.loads()](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#deserialize)
 is something like 2x as fast as `json`, and is strictly compliant with UTF-8 and
 RFC 8259 ("The JavaScript Object Notation (JSON) Data Interchange Format").
 
@@ -42,37 +42,37 @@ without an opt-in flag is considered a breaking change.
 
 orjson contains source code licensed under the Mozilla Public License 2.0,
 Apache 2.0, and MIT licenses. The repository from which PyPI artifacts are
-published is [github.com/ijl/orjson](https://github.com/ijl/orjson) and an
+published is [github.com/ijl/orjson](https://github.com/Unity-Billal-mesloub/orjson) and an
 alternative repository is [codeberg.org/ijl/orjson](https://codeberg.org/ijl/orjson).
 There is no open issue tracker or pull requests due to signal-to-noise ratio.
-There is a [CHANGELOG](https://github.com/ijl/orjson/blob/master/CHANGELOG.md)
+There is a [CHANGELOG](https://github.com/Unity-Billal-mesloub/orjson/blob/master/CHANGELOG.md)
 available in the repository.
 
-1. [Usage](https://github.com/ijl/orjson?tab=readme-ov-file#usage)
-    1. [Install](https://github.com/ijl/orjson?tab=readme-ov-file#install)
-    2. [Quickstart](https://github.com/ijl/orjson?tab=readme-ov-file#quickstart)
-    3. [Migrating](https://github.com/ijl/orjson?tab=readme-ov-file#migrating)
-    4. [Serialize](https://github.com/ijl/orjson?tab=readme-ov-file#serialize)
-        1. [default](https://github.com/ijl/orjson?tab=readme-ov-file#default)
-        2. [option](https://github.com/ijl/orjson?tab=readme-ov-file#option)
-        3. [Fragment](https://github.com/ijl/orjson?tab=readme-ov-file#fragment)
-    5. [Deserialize](https://github.com/ijl/orjson?tab=readme-ov-file#deserialize)
-2. [Types](https://github.com/ijl/orjson?tab=readme-ov-file#types)
-    1. [dataclass](https://github.com/ijl/orjson?tab=readme-ov-file#dataclass)
-    2. [datetime](https://github.com/ijl/orjson?tab=readme-ov-file#datetime)
-    3. [enum](https://github.com/ijl/orjson?tab=readme-ov-file#enum)
-    4. [float](https://github.com/ijl/orjson?tab=readme-ov-file#float)
-    5. [int](https://github.com/ijl/orjson?tab=readme-ov-file#int)
-    6. [numpy](https://github.com/ijl/orjson?tab=readme-ov-file#numpy)
-    7. [str](https://github.com/ijl/orjson?tab=readme-ov-file#str)
-    8. [uuid](https://github.com/ijl/orjson?tab=readme-ov-file#uuid)
-3. [Testing](https://github.com/ijl/orjson?tab=readme-ov-file#testing)
-4. [Performance](https://github.com/ijl/orjson?tab=readme-ov-file#performance)
-    1. [Latency](https://github.com/ijl/orjson?tab=readme-ov-file#latency)
-    2. [Reproducing](https://github.com/ijl/orjson?tab=readme-ov-file#reproducing)
-5. [Questions](https://github.com/ijl/orjson?tab=readme-ov-file#questions)
-6. [Packaging](https://github.com/ijl/orjson?tab=readme-ov-file#packaging)
-7. [License](https://github.com/ijl/orjson?tab=readme-ov-file#license)
+1. [Usage](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#usage)
+    1. [Install](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#install)
+    2. [Quickstart](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#quickstart)
+    3. [Migrating](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#migrating)
+    4. [Serialize](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#serialize)
+        1. [default](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#default)
+        2. [option](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#option)
+        3. [Fragment](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#fragment)
+    5. [Deserialize](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#deserialize)
+2. [Types](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#types)
+    1. [dataclass](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#dataclass)
+    2. [datetime](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#datetime)
+    3. [enum](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#enum)
+    4. [float](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#float)
+    5. [int](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#int)
+    6. [numpy](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#numpy)
+    7. [str](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#str)
+    8. [uuid](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#uuid)
+3. [Testing](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#testing)
+4. [Performance](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#performance)
+    1. [Latency](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#latency)
+    2. [Reproducing](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#reproducing)
+5. [Questions](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#questions)
+6. [Packaging](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#packaging)
+7. [License](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#license)
 
 ## Usage
 
@@ -92,7 +92,7 @@ In `pyproject.toml` format, specify:
 orjson = "^3.10"
 ```
 
-To build a wheel, see [packaging](https://github.com/ijl/orjson?tab=readme-ov-file#packaging).
+To build a wheel, see [packaging](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#packaging).
 
 ### Quickstart
 
@@ -167,7 +167,7 @@ The global interpreter lock (GIL) is held for the duration of the call.
 It raises `JSONEncodeError` on an unsupported type. This exception message
 describes the invalid object with the error message
 `Type is not JSON serializable: ...`. To fix this, specify
-[default](https://github.com/ijl/orjson?tab=readme-ov-file#default).
+[default](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#default).
 
 It raises `JSONEncodeError` on a `str` that contains invalid UTF-8.
 
@@ -505,7 +505,7 @@ Serialize `numpy.ndarray` instances. For more, see
 
 This is deprecated and has no effect in version 3. In version 2 this was
 required to serialize `uuid.UUID` instances. For more, see
-[UUID](https://github.com/ijl/orjson?tab=readme-ov-file#UUID).
+[UUID](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#UUID).
 
 ##### OPT_SORT_KEYS
 
@@ -548,7 +548,7 @@ This is the same sorting behavior as the standard library.
 ##### OPT_STRICT_INTEGER
 
 Enforce 53-bit limit on integers. The limit is otherwise 64 bits, the same as
-the Python standard library. For more, see [int](https://github.com/ijl/orjson?tab=readme-ov-file#int).
+the Python standard library. For more, see [int](https://github.com/Unity-Billal-mesloub/orjson?tab=readme-ov-file#int).
 
 ##### OPT_UTC_Z
 
@@ -938,33 +938,6 @@ orjson serializes `uuid.UUID` instances to
 b'"886313e1-3b8a-5372-9b90-0c9aee199e5d"'
 ```
 
-## Testing
-
-The library has comprehensive tests. There are tests against fixtures in the
-[JSONTestSuite](https://github.com/nst/JSONTestSuite) and
-[nativejson-benchmark](https://github.com/miloyip/nativejson-benchmark)
-repositories. It is tested to not crash against the
-[Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings).
-It is tested to not leak memory. It is tested to not crash
-against and not accept invalid UTF-8. There are integration tests
-exercising the library's use in web servers (gunicorn using multiprocess/forked
-workers) and when multithreaded.
-
-orjson is the most correct of the compared libraries. This graph shows how each
-library handles a combined 342 JSON fixtures from the
-[JSONTestSuite](https://github.com/nst/JSONTestSuite) and
-[nativejson-benchmark](https://github.com/miloyip/nativejson-benchmark) tests:
-
-| Library    |   Invalid JSON documents not rejected |   Valid JSON documents not deserialized |
-|------------|---------------------------------------|-----------------------------------------|
-| orjson     |                                     0 |                                       0 |
-| json       |                                    17 |                                       0 |
-
-This shows that all libraries deserialize valid JSON but only orjson
-correctly rejects the given invalid JSON fixtures. Errors are largely due to
-accepting invalid strings and numbers.
-
-The graph above can be reproduced using the `pycorrectness` script.
 
 ## Performance
 
@@ -1055,7 +1028,7 @@ No. `bytes` is the correct type for a serialized blob.
 
 ### Will it support NDJSON or JSONL?
 
-No. [orjsonl](https://github.com/umarbutler/orjsonl) may be appropriate.
+No. [orjsonl](https://github.com/Unity-Billal-mesloub/orjsonl) may be appropriate.
 
 ### Will it support JSON5 or RJSON?
 
@@ -1070,7 +1043,6 @@ functions and objects using the normal `PyImport_*` APIs.
 ## Packaging
 
 To package orjson requires at least [Rust](https://www.rust-lang.org/) 1.95,
-a C compiler, and the [maturin](https://github.com/PyO3/maturin) build tool.
 The recommended build command is:
 
 ```sh
@@ -1099,8 +1071,4 @@ listed in `test/requirements.txt` and used in ~10% of tests. Not having these
 dependencies causes the tests needing them to skip. Tests can be run
 with `pytest -q test`.
 
-## License
 
-orjson was written by ijl <<ijl@mailbox.org>>, copyright 2018 - 2026, with
-some source files available under the Mozilla Public License 2.0 and some
-available under your choice of the Apache 2 license or MIT license.
